@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-04-02 13:43:53">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>K26 Lab AI Context Agent</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>0ff65e3450c4c3107f44808b0a8b2d9c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>33f3e3b4508007107f44808b0a8b2d12</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_712d860a98bf36107f44c7d8bf75a830</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:21:08</sys_created_on><sys_id>712d860a98bf36107f44c7d8bf75a830</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Context Handler.sn_bom.agent</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="global.global.K26 FSO Context Handler">612d460a98bf36107f44c7d8bf75a8d9</sys_security_acl><sys_update_name>sys_security_acl_role_712d860a98bf36107f44c7d8bf75a830</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:21:08</sys_updated_on><sys_user_role display_value="sn_bom.agent" name="sn_bom.agent">8a98c24f7354201056c1fc88caf6a759</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>f7f3e3b4508007107f44808b0a8b2d12</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_role_792d860a98bf36107f44c7d8bf75a826</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:21:08</sys_created_on><sys_id>792d860a98bf36107f44c7d8bf75a826</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Context Handler.sn_bom.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="global.global.K26 FSO Context Handler">612d460a98bf36107f44c7d8bf75a8d9</sys_security_acl><sys_update_name>sys_security_acl_role_792d860a98bf36107f44c7d8bf75a826</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:21:08</sys_updated_on><sys_user_role display_value="sn_bom.admin" name="sn_bom.admin">1c3bdb01733200103fcae6e24ff6a7c2</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>33f3e3b4508007107f44808b0a8b2d13</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_agent_access_role_configuration_df2d860a98bf36107f44c7d8bf75a843</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration"><sys_agent_access_role_configuration action="INSERT_OR_UPDATE"><action>limit_to_roles</action><agent>beda0e8298bf36107f44c7d8bf75a850</agent><agent_table>sn_aia_agent</agent_table><allow_all_session_roles>false</allow_all_session_roles><description/><name>beda0e8298bf36107f44c7d8bf75a850</name><role_list name="sn_bom.admin">1c3bdb01733200103fcae6e24ff6a7c2,8a98c24f7354201056c1fc88caf6a759,2831a114c611228501d4ea6c309d626d</role_list><sys_class_name>sys_agent_access_role_configuration</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:21:15</sys_created_on><sys_id>df2d860a98bf36107f44c7d8bf75a843</sys_id><sys_mod_count>3</sys_mod_count><sys_name>beda0e8298bf36107f44c7d8bf75a850</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_agent_access_role_configuration_df2d860a98bf36107f44c7d8bf75a843</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-02 13:43:31</sys_updated_on></sys_agent_access_role_configuration></record_update>]]></payload>
+<payload_hash>-144347079</payload_hash>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>37f3e3b4508007107f44808b0a8b2d13</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4e6f517e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name>beda0e8298bf36107f44c7d8bf75a850</target_name>
+<type>Agent Access Role Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>eae3af740580071000c08b21b86df284</update_guid>
+<update_guid_history>eae3af740580071000c08b21b86df284:-144347079,3193e734a2800710c52fed3f2eabeefb:1603919988,c0616fbc93400710d5fa0fed311b37d0:-144347079,dff65e3480c4c310e2e7ad75bac406e9:1603919988</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_agent_beda0e8298bf36107f44c7d8bf75a850</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;&lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;&lt;advanced_mode&gt;false&lt;/advanced_mode&gt;&lt;agent_type&gt;internal&lt;/agent_type&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;channel&gt;nap_and_va&lt;/channel&gt;&lt;compiled_handbook/&gt;&lt;condition/&gt;&lt;context_processing_script&gt;&lt;![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]&gt;&lt;/context_processing_script&gt;&lt;description&gt;This agent processes full text inputs to extract intent, category, subcategory, and recommended actions. It is designed for users who require structured information from unstructured text, enabling efficient classification and actionable insights.&lt;/description&gt;&lt;external_agent_configuration/&gt;&lt;inputs&gt;[]&lt;/inputs&gt;&lt;instructions&gt;Step 1 Validate the case context.
+
+1.1 Using the tools available Retrieve and review the Interaction details.
+1.2 Focus on the Short Description field and use it in other steps when needed
+1.3 If the Short Description is empty or unavailable, communicate this to the user and finish execution.
+
+Step 2 Identify the user intent.
+
+2.1 Using the Short Description, determine what the user is trying to do.
+2.2 This identified action must be used as the Intent.
+
+Step 3 Identify the case category.
+
+3.1 Classify the case into the most appropriate category based on the Short Description.
+3.2 Use the tools available to determine the category and remember both the label and the value of the category to communicate with other agents when needed
+3.3 Use the tools available to identiy the sub-category based on the category identified in step 3.2 remember both the label and the value of the sub-category to communicate with other agents when needed
+
+Step 4 Identify the user sentiment.
+
+4.1 Analyze the Short Description to determine the user sentiment.
+4.2 Classify the sentiment as one of the following:
+
+4.2.1 Positive
+4.2.2 Neutral
+4.2.3 Negative
+
+Step 5. Generate the final response.
+
+5.1 Once all previous steps are completed, notify the user that processing is complete.
+
+
+Step 6. Create complaint case 6.1 if the sentiment is Negative create a new complaint case
+
+
+Important Notes:
+
+Always execute Step 1 before any other step.
+Never skip Step 2, Step 3, or Step 4 if the Short Description is available.
+Never infer intent, category, or sentiment from any field other than the Short Description.
+Never execute any step more than once.
+Always generate the final response in Step 5 once analysis is complete.&lt;/instructions&gt;&lt;internal_name&gt;global.global.K26 FSO Context Handler&lt;/internal_name&gt;&lt;name&gt;K26 FSO Context Handler&lt;/name&gt;&lt;outputs&gt;""&lt;/outputs&gt;&lt;parent/&gt;&lt;post_processing_message/&gt;&lt;processing_message/&gt;&lt;proficiency&gt;- Expert in structured information extraction from input text, capable of identifying user intent, categorizing content, determining relevant subcategories, and recommending actions. The agent delivers concise and direct outputs, ensuring clarity and precision for downstream processing, workflow automation, and decision-making. This capability is foundational and directly derived from the agent's ROLE.
+- Proficient in utilizing the 'Category lookup' tool to identify and retrieve the most appropriate category for a case, based on the Short Description. The agent leverages pre-defined inputs to access the 'sn_bom_compl_service' table and the 'category' element, ensuring accurate classification and retrieval of both category label and value for further processing and communication.
+- Skilled in using the 'Look up subcategory' tool to determine the appropriate subcategory for a case, leveraging the identified category value. The agent accesses pre-defined CRUD inputs to query the 'sys_choice' table for subcategory information, ensuring accurate retrieval of both subcategory label and value for enhanced case classification and communication.
+- Capable of leveraging the 'Create case' tool to generate new complaint cases, populating all required fields such as category value, subcategory value, account, contact, short description, and a contextually inferred description. The agent uses pre-defined CRUD inputs to ensure accurate and complete case creation, facilitating actionable outcomes and supporting workflow automation.
+- Demonstrates procedural proficiency by strictly adhering to a stepwise ACTION PLAN: validating case context, extracting user intent, categorizing and subcategorizing cases, analyzing user sentiment, and generating a final response. The agent ensures each step is executed once, in order, and exclusively based on the Short Description, maintaining workflow integrity and compliance.
+- Competent in performing sentiment analysis on the Short Description, classifying user sentiment as Positive, Neutral, or Negative. This capability supports actionable insights and enhances decision-making by providing an additional layer of context for workflow automation and case prioritization.
+- Exhibits a direct and concise communication style, delivering clear and precise data points for workflow automation and downstream processing. The agent ensures outputs are actionable and unambiguous, facilitating efficient information exchange and decision-making.&lt;/proficiency&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;role&gt;Responsible for analyzing input text to identify and extract the user's intent, categorize the content, determine subcategories, and suggest recommended actions. The agent acts as a structured information extractor, providing clear and actionable outputs for downstream processing. It communicates in a direct and concise manner, focusing on delivering precise data points for workflow automation and decision-making.&lt;/role&gt;&lt;source_id/&gt;&lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-24 18:12:11&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;beda0e8298bf36107f44c7d8bf75a850&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;K26 FSO Context Handler&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_agent_beda0e8298bf36107f44c7d8bf75a850&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-24 18:21:04&lt;/sys_updated_on&gt;&lt;/sn_aia_agent&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3bf3e3b4508007107f44808b0a8b2d13</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_agent_config_661b860698bf36107f44c7d8bf75a87b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config"><sn_aia_agent_config action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Context Handler">beda0e8298bf36107f44c7d8bf75a850</agent><agent_learning>false</agent_learning><doc_url/><icon_url/><public>false</public><run_as_user/><sys_class_name>sn_aia_agent_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:12:11</sys_created_on><sys_domain>global</sys_domain><sys_id>661b860698bf36107f44c7d8bf75a87b</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_config_661b860698bf36107f44c7d8bf75a87b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:12:11</sys_updated_on></sn_aia_agent_config></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3ff3e3b4508007107f44808b0a8b2d13</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_agent_tool_m2m_351d820a98bf36107f44c7d8bf75a8d7</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Context Handler">beda0e8298bf36107f44c7d8bf75a850</agent><description>Use this tool to identify the category</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"table","value":"","description":"always use sn_bom_compl_service","mandatory":false,"invalidMessage":null},{"name":"element","value":"","description":"This is always category","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"lookup","table":{"value":"sys_choice","displayValue":"Choice"},"query":"name=sn_bom_compl_service^element=category","returnFields":[{"excludedOperators":[],"extendedOperators":null,"name":"value","label":"Value","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"trim_value","value":"true"}],"id":"value","sublabel":"value"},{"excludedOperators":[],"extendedOperators":null,"name":"label","label":"Label","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"trim_value","value":"true"}],"id":"label","sublabel":"label"}],"limit":"15","orderBy":"","sortType":""},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs><max_auto_executions>10</max_auto_executions><name>Category lookup</name><output_transformation_strategy>none</output_transformation_strategy><post_message>Category identified</post_message><post_processing_script/><pre_message>Identifying category</pre_message><pre_run>false</pre_run><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:20:52</sys_created_on><sys_domain>global</sys_domain><sys_id>351d820a98bf36107f44c7d8bf75a8d7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Category lookup</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_351d820a98bf36107f44c7d8bf75a8d7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:20:52</sys_updated_on><timeout/><tool display_value="Category lookup">6d1d820a98bf36107f44c7d8bf75a8d0</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>33f3e3b4508007107f44808b0a8b2d14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_agent_tool_m2m_bd1dc20a98bf36107f44c7d8bf75a891</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Context Handler">beda0e8298bf36107f44c7d8bf75a850</agent><description>Use this to identify the sub category</description><display_output>false</display_output><document_status/><execution_mode>autopilot</execution_mode><inputs>[{"name":"categoryValue","value":"","description":"This is the value identified for the category","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"lookup","table":{"value":"sys_choice","displayValue":"Choice"},"query":"name=sn_bom_compl_service^element=subcategory^dependent_value={{categoryValue}}","returnFields":[{"excludedOperators":[],"extendedOperators":null,"name":"value","label":"Value","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"trim_value","value":"true"}],"id":"value","sublabel":"value"},{"excludedOperators":[],"extendedOperators":null,"name":"label","label":"Label","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"trim_value","value":"true"}],"id":"label","sublabel":"label"}],"limit":"15","orderBy":"","sortType":""},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs><max_auto_executions>10</max_auto_executions><name>Look up subcategory</name><output_transformation_strategy>none</output_transformation_strategy><post_message>Sub-category identified</post_message><post_processing_script/><pre_message>Identifying sub-category</pre_message><pre_run>false</pre_run><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:20:53</sys_created_on><sys_domain>global</sys_domain><sys_id>bd1dc20a98bf36107f44c7d8bf75a891</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Look up subcategory</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_bd1dc20a98bf36107f44c7d8bf75a891</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:20:53</sys_updated_on><timeout/><tool display_value="Look up subcategory">b51dc20a98bf36107f44c7d8bf75a88e</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>37f3e3b4508007107f44808b0a8b2d14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_agent_tool_m2m_c21dc20a98bf36107f44c7d8bf75a8cc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Context Handler">beda0e8298bf36107f44c7d8bf75a850</agent><description>Use this tool to create a new complaint case</description><display_output>false</display_output><document_status/><execution_mode>copilot</execution_mode><inputs>[{"name":"CategoryValue","value":"","description":"This is the category value identified matching what was identified for interaction","mandatory":false,"invalidMessage":null},{"name":"SubCategoryValue","value":"","description":"This is the sub category value identified matching what was identified for interaction","mandatory":false,"invalidMessage":null},{"name":"Account","value":"","description":"This is the Account Sys ID usually this is stored as the value under the account","mandatory":false,"invalidMessage":null},{"name":"Contact","value":"","description":"This is the contact Sys ID usually this is stored as the value under the contact","mandatory":false,"invalidMessage":null},{"name":"ShortDesciption","value":"","description":"This is the short description found on the interaction","mandatory":false,"invalidMessage":null},{"name":"Description","value":"","description":"This is a description of the reason we're opening up the case.. infer from the context of your plan","mandatory":false,"invalidMessage":null},{"name":"crudInputs","value":{"operation":"create","table":{"value":"sn_bom_compl_service","displayValue":"Complaint Case"},"fieldValues":[{"field":{"excludedOperators":[],"extendedOperators":null,"name":"account","label":"Account","type":"reference","referenceTable":"customer_account","referenceTableDefaultField":"name","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"},{"name":"readonly_clickthrough","value":"true"}],"id":"account","sublabel":"account"},"value":{"fieldValue":"{{Account}}"}},{"field":{"excludedOperators":[],"extendedOperators":null,"name":"contact","label":"Contact","type":"reference","referenceTable":"customer_contact","referenceTableDefaultField":"name","referenceKey":null,"dictionaryAttributes":[{"name":"encode_utf8","value":"false"},{"name":"readonly_clickthrough","value":"true"},{"name":"ref_contributions","value":"show_phone_customer_service"}],"id":"contact","sublabel":"contact"},"value":{"fieldValue":"{{Contact}}"}},{"field":{"excludedOperators":[],"extendedOperators":null,"name":"category","label":"Category","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[],"id":"category","sublabel":"category"},"value":{"fieldValue":"{{CategoryValue}}"}},{"field":{"excludedOperators":[],"extendedOperators":null,"name":"subcategory","label":"Subcategory","type":"choice","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[],"id":"subcategory","sublabel":"subcategory"},"value":{"fieldValue":"{{SubCategoryValue}}"}},{"field":{"excludedOperators":[],"extendedOperators":null,"name":"short_description","label":"Short description","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"},{"name":"knowledge_search","value":"true"},{"name":"no_truncate","value":"true"},{"name":"ts_weight","value":"10"}],"id":"short_description","sublabel":"short_description"},"value":{"fieldValue":"{{ShortDesciption}}"}},{"field":{"excludedOperators":[],"extendedOperators":null,"name":"description","label":"Complaint summary","type":"string","referenceTable":null,"referenceTableDefaultField":null,"referenceKey":null,"dictionaryAttributes":[{"name":"edge_encryption_enabled","value":"true"}],"id":"description","sublabel":"description"},"value":{"fieldValue":"{{Description}}"}}]},"description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]</inputs><max_auto_executions>10</max_auto_executions><name>Create case</name><output_transformation_strategy>none</output_transformation_strategy><post_message>Complaint case created</post_message><post_processing_script/><pre_message>Creating new case</pre_message><pre_run>false</pre_run><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:20:53</sys_created_on><sys_domain>global</sys_domain><sys_id>c21dc20a98bf36107f44c7d8bf75a8cc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create case</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_c21dc20a98bf36107f44c7d8bf75a8cc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:20:53</sys_updated_on><timeout/><tool display_value="Create case">ca1dc20a98bf36107f44c7d8bf75a8c8</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3bf3e3b4508007107f44808b0a8b2d14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_tool_6d1d820a98bf36107f44c7d8bf75a8d0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_tool"&gt;&lt;sn_aia_tool action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Use this tool to identify the category&lt;/description&gt;&lt;input_schema&gt;[{"name":"table","description":"always use sn_bom_compl_service","mandatory":false},{"name":"element","description":"This is always category","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]&lt;/input_schema&gt;&lt;name&gt;Category lookup&lt;/name&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;script&gt;&lt;![CDATA[(function (inputs) {
+
+    // parses query expression containing {{variables}}
+    // by replacing {{variableName}} with the value of the variableName property in the inputs object
+    // if the variableName property is not found in the inputs object, the variableName is returned as is
+    function parseQuery(expression, inputs) {
+        if (!expression) return '';
+        return expression.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs &amp;&amp; inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName];
+                }
+                return '';
+            }
+        );
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var query = parseQuery(inputs.crudInputs.query, inputs);
+    var sortType = inputs.crudInputs.sortType;
+    var orderBy = inputs.crudInputs.orderBy;
+    var limit = inputs.crudInputs.limit || 5;
+    var fields = inputs.crudInputs.returnFields || [];
+
+    var results = [];
+    var protectedRecords = 0;
+    var gr = new GlideRecordSecure(table);
+    if (query) {
+        gr.addEncodedQuery(query, true);
+    } else {
+        gs.error('[AIA error] No query provided');
+        return {
+            message: 'No query provided',
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+
+    if (orderBy &amp;&amp; sortType === 'a_to_z') {
+        gr.orderBy(orderBy);
+    } else if (orderBy &amp;&amp; sortType !== 'a_to_z') {
+        gr.orderByDesc(orderBy);
+    }
+
+    gr.setLimit(limit);
+    gr.query();
+    while (gr.next()) {
+        var fieldObj = {};
+        if (gr.canRead()) {
+            fields.forEach(function (field) {
+                if (gr.canRead(field.id)) {
+                    // store both value and display value for consistency with other field types
+                    fieldObj[field.id] = {
+                        value: gr.getValue(field.id),
+                        displayValue: gr.getDisplayValue(field.id),
+                    };
+                }
+            });
+        } else {
+            protectedRecords++;
+        }
+        results.push(fieldObj);
+    }
+
+    var recordCount = results.length;
+    var total = recordCount + protectedRecords;
+    var message = sn_i18n.Message.getMessage(
+        'sn_aia',
+        '{count} out of {total} records returned from the {table} table.',
+        {
+            count: recordCount.toString(),
+            total: total.toString(),
+            table: tableName,
+        }
+    );
+
+    return {
+        records: results,
+        message: message,
+        status: sn_i18n.Message.getMessage('sn_aia', 'success'),
+    };
+})(inputs);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_aia_tool&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-24 18:20:51&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;6d1d820a98bf36107f44c7d8bf75a8d0&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Category lookup&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_tool_6d1d820a98bf36107f44c7d8bf75a8d0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-24 18:20:51&lt;/sys_updated_on&gt;&lt;target_document/&gt;&lt;target_document_table&gt;sn_aia_tool&lt;/target_document_table&gt;&lt;type&gt;crud&lt;/type&gt;&lt;/sn_aia_tool&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3ff3e3b4508007107f44808b0a8b2d14</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_tool_b51dc20a98bf36107f44c7d8bf75a88e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_tool"&gt;&lt;sn_aia_tool action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Use this to identify the sub category&lt;/description&gt;&lt;input_schema&gt;[{"name":"categoryValue","description":"This is the value identified for the category","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]&lt;/input_schema&gt;&lt;name&gt;Look up subcategory&lt;/name&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;script&gt;&lt;![CDATA[(function (inputs) {
+
+    // parses query expression containing {{variables}}
+    // by replacing {{variableName}} with the value of the variableName property in the inputs object
+    // if the variableName property is not found in the inputs object, the variableName is returned as is
+    function parseQuery(expression, inputs) {
+        if (!expression) return '';
+        return expression.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs &amp;&amp; inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName];
+                }
+                return '';
+            }
+        );
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var query = parseQuery(inputs.crudInputs.query, inputs);
+    var sortType = inputs.crudInputs.sortType;
+    var orderBy = inputs.crudInputs.orderBy;
+    var limit = inputs.crudInputs.limit || 5;
+    var fields = inputs.crudInputs.returnFields || [];
+
+    var results = [];
+    var protectedRecords = 0;
+    var gr = new GlideRecordSecure(table);
+    if (query) {
+        gr.addEncodedQuery(query, true);
+    } else {
+        gs.error('[AIA error] No query provided');
+        return {
+            message: 'No query provided',
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+
+    if (orderBy &amp;&amp; sortType === 'a_to_z') {
+        gr.orderBy(orderBy);
+    } else if (orderBy &amp;&amp; sortType !== 'a_to_z') {
+        gr.orderByDesc(orderBy);
+    }
+
+    gr.setLimit(limit);
+    gr.query();
+    while (gr.next()) {
+        var fieldObj = {};
+        if (gr.canRead()) {
+            fields.forEach(function (field) {
+                if (gr.canRead(field.id)) {
+                    // store both value and display value for consistency with other field types
+                    fieldObj[field.id] = {
+                        value: gr.getValue(field.id),
+                        displayValue: gr.getDisplayValue(field.id),
+                    };
+                }
+            });
+        } else {
+            protectedRecords++;
+        }
+        results.push(fieldObj);
+    }
+
+    var recordCount = results.length;
+    var total = recordCount + protectedRecords;
+    var message = sn_i18n.Message.getMessage(
+        'sn_aia',
+        '{count} out of {total} records returned from the {table} table.',
+        {
+            count: recordCount.toString(),
+            total: total.toString(),
+            table: tableName,
+        }
+    );
+
+    return {
+        records: results,
+        message: message,
+        status: sn_i18n.Message.getMessage('sn_aia', 'success'),
+    };
+})(inputs);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_aia_tool&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-24 18:20:52&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;b51dc20a98bf36107f44c7d8bf75a88e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Look up subcategory&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_tool_b51dc20a98bf36107f44c7d8bf75a88e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-24 18:20:52&lt;/sys_updated_on&gt;&lt;target_document/&gt;&lt;target_document_table&gt;sn_aia_tool&lt;/target_document_table&gt;&lt;type&gt;crud&lt;/type&gt;&lt;/sn_aia_tool&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>33f3e3b4508007107f44808b0a8b2d15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_tool_ca1dc20a98bf36107f44c7d8bf75a8c8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_tool"&gt;&lt;sn_aia_tool action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Use this tool to create a new complaint case&lt;/description&gt;&lt;input_schema&gt;[{"name":"CategoryValue","description":"This is the category value identified matching what was identified for interaction","mandatory":false},{"name":"SubCategoryValue","description":"This is the sub category value identified matching what was identified for interaction","mandatory":false},{"name":"Account","description":"This is the Account Sys ID usually this is stored as the value under the account","mandatory":false},{"name":"Contact","description":"This is the contact Sys ID usually this is stored as the value under the contact","mandatory":false},{"name":"ShortDesciption","description":"This is the short description found on the interaction","mandatory":false},{"name":"Description","description":"This is a description of the reason we're opening up the case.. infer from the context of your plan","mandatory":false},{"name":"crudInputs","description":"CRUD Input Variables. These are already pre-defined. Under no circumstances should you prompt the user for this information or attempt to change these values."}]&lt;/input_schema&gt;&lt;name&gt;Create case&lt;/name&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;script&gt;&lt;![CDATA[(function (inputs) {
+    function getChoiceList(tableName, fieldName) {
+        var choices = GlideChoiceList.getChoiceList(tableName, fieldName);
+        if (!choices) return [];
+
+        var choicesArray = [];
+        for (var i = 0; i &lt; choices.getSize(); i++) {
+            choicesArray.push({
+                value: choices.getChoice(i).getValue(),
+                label: choices.getChoice(i).getLabel(),
+            });
+        }
+        return choicesArray;
+    }
+
+    // parses {{value}} and obtains the correct value for a choice or reference field.
+    function parseValue(table, value, field, inputs) {
+        if (!value || typeof value === 'object') return '';
+        // regex to parse {{var}} and check if the inputs contain that prop
+        var fieldValue = value.replace(
+            /{{\s*(\w+)\s*}}/g,
+            function (match, variableName) {
+                if (inputs &amp;&amp; inputs.hasOwnProperty(variableName)) {
+                    return inputs[variableName];
+                }
+                return '';
+            }
+        );
+        if (!fieldValue) return field.type === 'string' ? '' : null;
+        if (field.type === 'choice') {
+            var choices = getChoiceList(table, field.id);
+            for (var i = 0; i &lt; choices.length; i++) {
+                if (
+                    choices[i].value == fieldValue ||
+                    choices[i].label
+                        .toLowerCase()
+                        .includes(fieldValue.toLowerCase())
+                ) {
+                    return choices[i].value;
+                }
+            }
+            // Neither value nor label matched
+            gs.error(
+                '[AIA AGENTS MSG] Invalid choice field value or label: {0}',
+                fieldValue
+            );
+        } else if (field.referenceTable) {
+            // First check if the input is a valid sys_id
+            var refGr = new GlideRecordSecure(field.referenceTable);
+            refGr.addQuery('sys_id', fieldValue);
+            refGr.query();
+            if (refGr.getRowCount() === 1) {
+                return fieldValue; // User input is a valid sys_id
+            }
+
+            if (field.referenceTableDefaultField) {
+                // If not, try to find a record with matching display value
+                var refName = field.referenceTableDefaultField;
+                refGr = new GlideRecordSecure(field.referenceTable);
+
+                // Check for both exact match and display value containing the input
+                var qr = refGr.addQuery(refName, fieldValue);
+                qr.addOrCondition(refName, 'CONTAINS', fieldValue);
+                refGr.setLimit(1);
+                refGr.query();
+
+                if (refGr.next()) {
+                    return refGr.getUniqueValue(); // Return the sys_id
+                }
+            }
+            // No match found
+            gs.error(
+                '[AIA AGENTS MSG] Invalid reference field value or label: {0}',
+                fieldValue
+            );
+        }
+        return fieldValue;
+    }
+
+    var table = inputs.crudInputs.table.value;
+    var tableName = inputs.crudInputs.table.displayValue;
+    var fieldValues = inputs.crudInputs.fieldValues
+        ? inputs.crudInputs.fieldValues
+        : [];
+    // each field is passed as an {id, label} obj to be displayed when editing the tool
+    // each value is not passed directly, but in an object containing the fieldValue prop
+    fieldValues = fieldValues.map(function (item) {
+        var fieldValue = item.value ? item.value.fieldValue : '';
+        return {
+            field: item.field.id,
+            value: parseValue(table, fieldValue, item.field, inputs),
+        };
+    });
+
+    var gr = new GlideRecordSecure(table);
+    if (gr.canCreate()) {
+        gr.initialize();
+        fieldValues.forEach(function (item) {
+            if (gr.isValidField(item.field)) {
+                gr.setValue(item.field, item.value);
+            }
+        });
+    } else {
+        return {
+            output: sn_i18n.Message.getMessage(
+                'sn_aia',
+                'Cannot create record due to security constraints.'
+            ),
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+    var sysId = gr.insert();
+
+    if (!sysId) {
+        gs.error('[AIA AGENTS MSG] Failed to insert the record.');
+        return {
+            output: sn_i18n.Message.getMessage(
+                'sn_aia',
+                'Failed to insert the record'
+            ),
+            status: sn_i18n.Message.getMessage('sn_aia', 'error'),
+        };
+    }
+    return {
+        sysId: sysId,
+        message: sn_i18n.Message.getMessage(
+            'sn_aia',
+            'Record successfully inserted into the {table} table.',
+            {
+                table: tableName,
+            }
+        ),
+        status: sn_i18n.Message.getMessage('sn_aia', 'success'),
+    };
+})(inputs);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_aia_tool&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-24 18:20:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;ca1dc20a98bf36107f44c7d8bf75a8c8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create case&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_tool_ca1dc20a98bf36107f44c7d8bf75a8c8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-24 18:20:53&lt;/sys_updated_on&gt;&lt;target_document/&gt;&lt;target_document_table&gt;sn_aia_tool&lt;/target_document_table&gt;&lt;type&gt;crud&lt;/type&gt;&lt;/sn_aia_tool&gt;&lt;/record_update&gt;</payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>37f3e3b4508007107f44808b0a8b2d15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sn_aia_version_e61b860698bf36107f44c7d8bf75a842</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version"><sn_aia_version action="INSERT_OR_UPDATE"><condition/><instructions>Step 1 Validate the case context.
+
+1.1 Using the tools available Retrieve and review the Interaction details.
+1.2 Focus on the Short Description field and use it in other steps when needed
+1.3 If the Short Description is empty or unavailable, communicate this to the user and finish execution.
+
+Step 2 Identify the user intent.
+
+2.1 Using the Short Description, determine what the user is trying to do.
+2.2 This identified action must be used as the Intent.
+
+Step 3 Identify the case category.
+
+3.1 Classify the case into the most appropriate category based on the Short Description.
+3.2 Use the tools available to determine the category and remember both the label and the value of the category to communicate with other agents when needed
+3.3 Use the tools available to identiy the sub-category based on the category identified in step 3.2 remember both the label and the value of the sub-category to communicate with other agents when needed
+
+Step 4 Identify the user sentiment.
+
+4.1 Analyze the Short Description to determine the user sentiment.
+4.2 Classify the sentiment as one of the following:
+
+4.2.1 Positive
+4.2.2 Neutral
+4.2.3 Negative
+
+Step 5. Generate the final response.
+
+5.1 Once all previous steps are completed, notify the user that processing is complete.
+
+Important Notes:
+
+Always execute Step 1 before any other step.
+Never skip Step 2, Step 3, or Step 4 if the Short Description is available.
+Never infer intent, category, or sentiment from any field other than the Short Description.
+Never execute any step more than once.
+Always generate the final response in Step 5 once analysis is complete.</instructions><state>published</state><sys_class_name>sn_aia_version</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:12:11</sys_created_on><sys_domain>global</sys_domain><sys_id>e61b860698bf36107f44c7d8bf75a842</sys_id><sys_mod_count>0</sys_mod_count><sys_name>V1</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_version_e61b860698bf36107f44c7d8bf75a842</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:12:11</sys_updated_on><target_id>beda0e8298bf36107f44c7d8bf75a850</target_id><target_table>sn_aia_agent</target_table><version_name>V1</version_name><version_number>1</version_number></sn_aia_version></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3bf3e3b4508007107f44808b0a8b2d15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_agent_access_role_configuration_df2d860a98bf36107f44c7d8bf75a843</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration"><sys_agent_access_role_configuration action="INSERT_OR_UPDATE"><action>limit_to_roles</action><agent>beda0e8298bf36107f44c7d8bf75a850</agent><agent_table>sn_aia_agent</agent_table><allow_all_session_roles>false</allow_all_session_roles><description/><name>beda0e8298bf36107f44c7d8bf75a850</name><role_list name="sn_bom.admin">1c3bdb01733200103fcae6e24ff6a7c2,8a98c24f7354201056c1fc88caf6a759</role_list><sys_class_name>sys_agent_access_role_configuration</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:21:15</sys_created_on><sys_id>df2d860a98bf36107f44c7d8bf75a843</sys_id><sys_mod_count>0</sys_mod_count><sys_name>beda0e8298bf36107f44c7d8bf75a850</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_agent_access_role_configuration_df2d860a98bf36107f44c7d8bf75a843</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:21:15</sys_updated_on></sys_agent_access_role_configuration></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>3ff3e3b4508007107f44808b0a8b2d15</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action/>
+<application display_value="Global">global</application>
+<category/>
+<comments/>
+<name>sys_security_acl_612d460a98bf36107f44c7d8bf75a8d9</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>global.global.K26 FSO Context Handler</name><operation display_value="execute">execute</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-24 18:21:08</sys_created_on><sys_id>612d460a98bf36107f44c7d8bf75a8d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Context Handler</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_612d460a98bf36107f44c7d8bf75a8d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-24 18:21:08</sys_updated_on><type display_value="gen_ai_agent">fc55e9f79f8222109570e67e8a0a1c34</type></sys_security_acl></record_update>]]></payload>
+<payload_hash/>
+<remote_update_set display_value="K26 Lab AI Context Agent">33f3e3b4508007107f44808b0a8b2d12</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-02 13:43:53</sys_created_on>
+<sys_id>33f3e3b4508007107f44808b0a8b2d16</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d4d3b96600000000</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-02 13:43:53</sys_updated_on>
+<table/>
+<target_name/>
+<type/>
+<update_domain>global</update_domain>
+<update_guid/>
+<update_guid_history/>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
