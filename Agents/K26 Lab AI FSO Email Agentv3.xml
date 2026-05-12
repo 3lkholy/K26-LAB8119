@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2026-04-15 21:55:17">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This is the email agent with K26 in the name</description>
+<inserted/>
+<name>K26 Lab AI FSO Email Agent</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>733f8051585003107f44ee5f67d2e37d</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>cd219c95585003107f44ee5f67d2e32b</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_aia_agent_47b09c55585003107f44ee5f67d2e356</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_agent"&gt;&lt;sn_aia_agent action="INSERT_OR_UPDATE"&gt;&lt;advanced_mode&gt;false&lt;/advanced_mode&gt;&lt;agent_type&gt;internal&lt;/agent_type&gt;&lt;applicability_script&gt;&lt;![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * @param {string} inputs.context.device_type - The device type from which the experience is accessed, e.g.'mweb' 
+ * @param {string} inputs.context.deployment_id - The unique identifier for the assistant deployment 
+ * @param {string} inputs.context.assistant_type - The type of assistant, e.g., 'nava' 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]&gt;&lt;/applicability_script&gt;&lt;channel&gt;nap_and_va&lt;/channel&gt;&lt;compiled_handbook/&gt;&lt;condition/&gt;&lt;context_processing_script&gt;&lt;![CDATA[/*
+ * Available Variables:
+ * - task: The task provided to agent to solve either by orchestrator or user(incase of only agent execution i.e agent is invoked as seperate entity instead from a workflow).
+ * - user_utterance: The user utterance provided. and task = user_utterance in case of individual agent execution.
+ * - agent_id: The agent id.
+ * - context: An object that carries additional contextual information for the agent.
+ *          It always includes a "pageContext" and may include a "triggerContext",
+ *          depending on how and from where the agent is invoked.
+ *
+ *          Behavior by invocation type:
+ *          ---------------------------------
+ *          - When invoked via the startAiAgentConversation API:
+ *                If a "contextMemory" parameter is provided in the API request,
+ *                it will be available here as the "triggerContext".
+ *                The "pageContext" is always present in this call, regardless
+ *                of whether the agent is executed individually or as part of a use case.
+ *                Example:
+ *                    {
+ *                        pageContext: { ... },
+ *                        triggerContext: { ... } // Derived from contextMemory (if passed)
+ *                    }
+ *
+ *          - When invoked as part of a use case or workflow:
+ *                The "pageContext" and "triggerContext" objects available here
+ *                may have been *modified* by the use case’s context processing script.
+ *                This means the use case may alter, extend, or overwrite values
+ *                from the original "pageContext" or "triggerContext"
+ *                before the context reaches the agent.
+ *                If the use case was originally triggered via the API,
+ *                the initial "triggerContext" is still derived from the
+ *                "contextMemory" parameter, but its contents may have been updated
+ *                by the use case logic.
+ *
+ *          - When executed directly (standalone agent execution):
+ *                The "pageContext" will always be present (default or empty),
+ *                and the "triggerContext" will only be populated if explicitly
+ *                passed through the API call.
+ * Return an modified context like: { pageContext : {},triggerContext:{} }
+ */
+(function(task, user_utterance, agent_id, context) {
+    return {
+        pageContext : context?.pageContext,
+		triggerContext : context?.triggerContext
+    };
+})(task,user_utterance, agent_id, context);]]&gt;&lt;/context_processing_script&gt;&lt;description&gt;Automates and manages email responses to customers for Financial Services cases and interactions. Designed for operations teams needing efficient, consistent, and context-aware communication with customers regarding their service cases.&lt;/description&gt;&lt;external_agent_configuration/&gt;&lt;inputs&gt;[]&lt;/inputs&gt;&lt;instructions&gt;Step 1 Receive case identifiers
+1.1 Accept the case or interaction identifiers from the invoking workflow or agent.
+
+
+Step 2 Retrieve the FSO case record
+2.1 Fetch the customer case or interaction using the provided identifiers.
+2.2 Validate that the case is active and eligible for outbound communication.
+
+Step 3 Analyze the current case context
+3.1 Retrieve the latest case status and key attributes.
+3.2 Review recent updates, work notes, and any relevant interaction history.
+
+Step 4 Generate the customer response content
+4.1 Use the case summary as the primary context.
+4.2 Incorporate agent-generated insights or transactional summaries as applicable.
+4.3 Ensure the response aligns with financial services tone and terminology.
+
+Step 5 Compose the outbound email
+5.1 Populate the email body with the generated response content.
+5.2 Always start the email with Dear follow by the contact name 
+
+Step 6. Preview the email draft and collect optional edits.
+6.1 Generate the full outbound email draft, including:
+6.1.1 Subject line
+6.1.2 Email body
+6.2 Display the draft email to the human agent as a preview.
+6.3 Ask the human agent whether they want to revise the language/tone.
+6.4 If the human agent provides edits, incorporate them into the final email subject and body.
+6.5 If no edits are provided, keep the original draft unchanged.
+6.6 provide the user with buttons to respond the options should be send as is / Revise 
+
+Step 7. Prepare to send the customer communication (single approval).
+7.1 use recipient email address as fsolab@k26.com
+7.2 Send the email using the final subject and body from Step 6.
+7.3 Always use the sender as support@abcfinancial.com and set the email type to New.
+7.4 The send action must request approval only once and must not prompt again after approval.
+7.5 Once you have human approval proceed&lt;/instructions&gt;&lt;internal_name&gt;global.global.K26 FSO Email Agent&lt;/internal_name&gt;&lt;name&gt;K26 FSO Email Agent&lt;/name&gt;&lt;outputs&gt;""&lt;/outputs&gt;&lt;parent/&gt;&lt;post_processing_message/&gt;&lt;processing_message/&gt;&lt;proficiency&gt;- Expertly manages all outbound email communications to customers regarding their cases or interactions within Financial Services operations, ensuring that every correspondence is accurate, timely, and tailored to the customer's inquiry or case status. The agent maintains a professional and clear communication style, leveraging deep understanding of financial services terminology and customer expectations to deliver relevant and compliant responses.
+- Efficiently receives and processes case or interaction identifiers, retrieves the associated FSO case record, and validates that the case is active and eligible for outbound communication, thereby ensuring that all outbound emails are contextually appropriate and compliant with operational guidelines.
+- Thoroughly analyzes the current context of each customer case by reviewing the latest status, key attributes, recent updates, work notes, and interaction history, enabling the agent to craft responses that are fully informed and relevant to the customer's ongoing experience.
+- Generates personalized and contextually accurate customer response content by synthesizing case summaries, agent insights, and transactional details, while consistently adhering to the tone, terminology, and standards expected in financial services communications.
+- Composes outbound emails with precision, ensuring each message begins with a personalized salutation (e.g., 'Dear [Contact Name]'), and the body is populated with relevant, case-specific content that addresses the customer's needs and inquiries.
+- Previews the full outbound email draft, including subject and body, to the human agent for review, collects optional edits regarding language and tone, and incorporates any feedback to ensure the final communication meets both operational and customer service standards.
+- Utilizes the 'Send Email' tool to deliver outbound communications, accurately populating all required fields (subject, body, recipients, type, sender, etc.), sending emails to the designated recipient (fsolab@k26.com) from the specified sender (support@abcfinancial.com), and ensuring that each email is sent only after a single approval from a human agent, in compliance with operational protocols.
+- Leverages advanced email configuration options to link outbound communications to specific case records, customize recipients (To, Cc, Bcc), and set email types (New or Reply), ensuring that every email is properly tracked, documented, and contextually relevant within the Financial Services operations workflow.
+- Executes a comprehensive, auditable workflow for outbound customer communications, encompassing case identification, context analysis, response generation, email composition, human review and approval, and final delivery, ensuring operational integrity, compliance, and high levels of customer satisfaction within Financial Services operations.&lt;/proficiency&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;role&gt;Handles all outbound email communications to customers regarding their interactions or cases within Financial Services operations. Acts as the primary interface for composing, personalizing, and sending timely responses based on case updates, resolutions, or additional information requests. Maintains a professional and clear communication style tailored to the financial services context, ensuring all correspondence is accurate and relevant to the customer's inquiry or case status.&lt;/role&gt;&lt;source_id/&gt;&lt;strategy display_value="ReAct"&gt;f0bff21f9f13c6108f431597d90a1c74&lt;/strategy&gt;&lt;sys_class_name&gt;sn_aia_agent&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 21:53:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;47b09c55585003107f44ee5f67d2e356&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;K26 FSO Email Agent&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_agent_47b09c55585003107f44ee5f67d2e356&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 21:55:03&lt;/sys_updated_on&gt;&lt;/sn_aia_agent&gt;&lt;/record_update&gt;</payload>
+<payload_hash>403840237</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>c5219c95585003107f44ee5f67d2e32c</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9324010b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name>K26 FSO Email Agent</target_name>
+<type>AI Agent</type>
+<update_domain>global</update_domain>
+<update_guid>fd111c950c50031089e2a139a186e7c5</update_guid>
+<update_guid_history>fd111c950c50031089e2a139a186e7c5:403840237,2de05495be5003101f84be30bddaadae:838436710,1ed0d0955c500310b9d7834546d44d6c:-107107595</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_aia_agent_config_d2d0d095585003107f44ee5f67d2e36e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config"><sn_aia_agent_config action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Email Agent">47b09c55585003107f44ee5f67d2e356</agent><agent_learning>false</agent_learning><doc_url/><icon_url/><public>false</public><run_as_user/><sys_class_name>sn_aia_agent_config</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:54:00</sys_created_on><sys_domain>global</sys_domain><sys_id>d2d0d095585003107f44ee5f67d2e36e</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_config_d2d0d095585003107f44ee5f67d2e36e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:54:00</sys_updated_on></sn_aia_agent_config></record_update>]]></payload>
+<payload_hash>-1711311994</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>01219c95585003107f44ee5f67d2e32d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d93230a150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name/>
+<type>AI Agent Config</type>
+<update_domain>global</update_domain>
+<update_guid>5ed0d095ba5003109e71f2fa1db16e6f</update_guid>
+<update_guid_history>5ed0d095ba5003109e71f2fa1db16e6f:-1711311994</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_aia_agent_tool_m2m_bd015895585003107f44ee5f67d2e36a</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m"><sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE"><active>true</active><agent display_value="K26 FSO Email Agent">47b09c55585003107f44ee5f67d2e356</agent><description>Sends an Email using the Subject, Body, Recipients, Type, Email sysId fields.</description><display_output>false</display_output><document_status/><execution_mode>copilot</execution_mode><inputs>[{"name":"targetTable","value":"","description":"Table containing the target record","mandatory":false,"invalidMessage":null},{"name":"targetRecord","value":"","description":"ID of the record that the email is linked to","mandatory":false,"invalidMessage":null},{"name":"subject","value":"","description":"Subject of the email","mandatory":false,"invalidMessage":null},{"name":"body","value":"","description":"Body of the email","mandatory":false,"invalidMessage":null},{"name":"to","value":"","description":"Recipients listed under 'To'","mandatory":false,"invalidMessage":null},{"name":"cc","value":"","description":"Recipients listed under 'Cc'","mandatory":false,"invalidMessage":null},{"name":"bcc","value":"","description":"Recipients listed under 'Bcc'","mandatory":false,"invalidMessage":null},{"name":"type","value":"","description":"Type of the email bing sent (New or Reply)","mandatory":false,"invalidMessage":null},{"name":"email_sysId","value":"","description":"sys_id of the email that is being processed.","mandatory":false,"invalidMessage":null},{"name":"sender","value":"","description":"From email address","mandatory":false,"invalidMessage":null}]</inputs><max_auto_executions>10</max_auto_executions><name>Send Email</name><output_transformation_strategy>none</output_transformation_strategy><post_message/><post_processing_script/><pre_message>Generating Email</pre_message><pre_run>false</pre_run><sys_class_name>sn_aia_agent_tool_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:54:47</sys_created_on><sys_domain>global</sys_domain><sys_id>bd015895585003107f44ee5f67d2e36a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Send Email</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_agent_tool_m2m_bd015895585003107f44ee5f67d2e36a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:54:47</sys_updated_on><timeout/><tool display_value="Send Email">7d015895585003107f44ee5f67d2e341</tool><tool_attributes>{}</tool_attributes><transformation_instructions/></sn_aia_agent_tool_m2m></record_update>]]></payload>
+<payload_hash>-721017382</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>05219c95585003107f44ee5f67d2e32d</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9323c2440000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name>Send Email</target_name>
+<type>Agent Tool</type>
+<update_domain>global</update_domain>
+<update_guid>f5015895a2500310223e3a50d8ef0e6e</update_guid>
+<update_guid_history>f5015895a2500310223e3a50d8ef0e6e:-721017382</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_aia_tool_7d015895585003107f44ee5f67d2e341</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_tool"&gt;&lt;sn_aia_tool action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;description&gt;Sends an Email using the Subject, Body, Recipients, Type, Email sysId fields.&lt;/description&gt;&lt;input_schema&gt;[{"name":"targetTable","description":"Table containing the target record","mandatory":false},{"name":"targetRecord","description":"ID of the record that the email is linked to","mandatory":false},{"name":"subject","description":"Subject of the email","mandatory":false},{"name":"body","description":"Body of the email","mandatory":false},{"name":"to","description":"Recipients listed under 'To'","mandatory":false},{"name":"cc","description":"Recipients listed under 'Cc'","mandatory":false},{"name":"bcc","description":"Recipients listed under 'Bcc'","mandatory":false},{"name":"type","description":"Type of the email bing sent (New or Reply)","mandatory":false},{"name":"email_sysId","description":"sys_id of the email that is being processed.","mandatory":false},{"name":"sender","description":"From email address","mandatory":false}]&lt;/input_schema&gt;&lt;name&gt;Send Email&lt;/name&gt;&lt;record_type&gt;custom&lt;/record_type&gt;&lt;script&gt;&lt;![CDATA[(function(inputs) {
+    var email = {};
+    email.target_table = inputs.targetTable;
+    email.target_record = inputs.targetRecord;
+    email.subject = inputs.subject;
+    email.body = inputs.body;
+    email.to = inputs.to;
+    email.cc = inputs.cc;
+    email.bcc = inputs.bcc;
+    email.type = inputs.type;
+    email.sysId = inputs.email_sysId;
+    email.sender = inputs.sender;
+    return new global.NotificationsEmailAgentsUtils().createEmail(email);
+})(inputs);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sn_aia_tool&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-04-15 21:54:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;7d015895585003107f44ee5f67d2e341&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Send Email&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_tool_7d015895585003107f44ee5f67d2e341&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-04-15 21:54:47&lt;/sys_updated_on&gt;&lt;target_document/&gt;&lt;target_document_table&gt;sn_aia_tool&lt;/target_document_table&gt;&lt;type&gt;script&lt;/type&gt;&lt;/sn_aia_tool&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1254349008</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>412110d5585003107f44ee5f67d2e376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9323c1d10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name>Send Email</target_name>
+<type>Tool</type>
+<update_domain>global</update_domain>
+<update_guid>390158957750031003775d20532f0443</update_guid>
+<update_guid_history>390158957750031003775d20532f0443:-1254349008</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sn_aia_version_cad0d095585003107f44ee5f67d2e368</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version"><sn_aia_version action="INSERT_OR_UPDATE"><condition/><instructions>Step 1 Receive case identifiers
+1.1 Accept the case or interaction identifiers from the invoking workflow or agent.
+
+
+Step 2 Retrieve the FSO case record
+2.1 Fetch the customer case or interaction using the provided identifiers.
+2.2 Validate that the case is active and eligible for outbound communication.
+
+Step 3 Analyze the current case context
+3.1 Retrieve the latest case status and key attributes.
+3.2 Review recent updates, work notes, and any relevant interaction history.
+
+Step 4 Generate the customer response content
+4.1 Use the case summary as the primary context.
+4.2 Incorporate agent-generated insights or transactional summaries as applicable.
+4.3 Ensure the response aligns with financial services tone and terminology.
+
+Step 5 Compose the outbound email
+5.1 Populate the email body with the generated response content.
+5.2 Always start the email with Dear follow by the contact name 
+
+Step 6. Preview the email draft and collect optional edits.
+6.1 Generate the full outbound email draft, including:
+6.1.1 Subject line
+6.1.2 Email body
+6.2 Display the draft email to the human agent as a preview.
+6.3 Ask the human agent whether they want to revise the language/tone.
+6.4 If the human agent provides edits, incorporate them into the final email subject and body.
+6.5 If no edits are provided, keep the original draft unchanged.
+
+Step 7. Prepare to send the customer communication (single approval).
+7.1 use recipient email address as fsolab@k26.com
+7.2 Send the email using the final subject and body from Step 6.
+7.3 Always use the sender as support@abcfinancial.com and set the email type to New.
+7.4 The send action must request approval only once and must not prompt again after approval.
+7.5 Once you have human approval proceed</instructions><state>published</state><sys_class_name>sn_aia_version</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:53:59</sys_created_on><sys_domain>global</sys_domain><sys_id>cad0d095585003107f44ee5f67d2e368</sys_id><sys_mod_count>0</sys_mod_count><sys_name>V1</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sn_aia_version_cad0d095585003107f44ee5f67d2e368</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:53:59</sys_updated_on><target_id>47b09c55585003107f44ee5f67d2e356</target_id><target_table>sn_aia_agent</target_table><version_name>V1</version_name><version_number>1</version_number></sn_aia_version></record_update>]]></payload>
+<payload_hash>1632360457</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>452110d5585003107f44ee5f67d2e376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d932308f80000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name>V1</target_name>
+<type>AIA Version</type>
+<update_domain>global</update_domain>
+<update_guid>86d0d0951050031041c44f90acd2576a</update_guid>
+<update_guid_history>86d0d0951050031041c44f90acd2576a:1632360457</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_agent_access_role_configuration_a9111455585003107f44ee5f67d2e322</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_agent_access_role_configuration"><sys_agent_access_role_configuration action="INSERT_OR_UPDATE"><action>limit_to_roles</action><agent>47b09c55585003107f44ee5f67d2e356</agent><agent_table>sn_aia_agent</agent_table><allow_all_session_roles>false</allow_all_session_roles><description/><name>47b09c55585003107f44ee5f67d2e356</name><role_list name="sn_bom.agent">8a98c24f7354201056c1fc88caf6a759,2831a114c611228501d4ea6c309d626d</role_list><sys_class_name>sys_agent_access_role_configuration</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:55:02</sys_created_on><sys_id>a9111455585003107f44ee5f67d2e322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>47b09c55585003107f44ee5f67d2e356</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_agent_access_role_configuration_a9111455585003107f44ee5f67d2e322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:55:02</sys_updated_on></sys_agent_access_role_configuration></record_update>]]></payload>
+<payload_hash>646764657</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>492110d5585003107f44ee5f67d2e376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d932400be0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table/>
+<target_name>47b09c55585003107f44ee5f67d2e356</target_name>
+<type>Agent Access Role Configuration</type>
+<update_domain>global</update_domain>
+<update_guid>ed111c959550031025126363e7d263a0</update_guid>
+<update_guid_history>ed111c959550031025126363e7d263a0:646764657</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_81115895585003107f44ee5f67d2e373</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Existing</local_or_existing><name>global.global.K26 FSO Email Agent</name><operation display_value="execute">execute</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:55:01</sys_created_on><sys_id>81115895585003107f44ee5f67d2e373</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Email Agent</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_81115895585003107f44ee5f67d2e373</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:55:01</sys_updated_on><type display_value="gen_ai_agent">fc55e9f79f8222109570e67e8a0a1c34</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-319653976</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>4d2110d5585003107f44ee5f67d2e376</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9323f7ff0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table>global.global.K26 FSO Email Agent</table>
+<target_name>global.global.K26 FSO Email Agent</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>81111c951f500310060ff1b511905040</update_guid>
+<update_guid_history>81111c951f500310060ff1b511905040:-319653976</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_cd111c95585003107f44ee5f67d2e341</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:55:01</sys_created_on><sys_id>cd111c95585003107f44ee5f67d2e341</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Email Agent.admin</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="global.global.K26 FSO Email Agent">81115895585003107f44ee5f67d2e373</sys_security_acl><sys_update_name>sys_security_acl_role_cd111c95585003107f44ee5f67d2e341</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:55:01</sys_updated_on><sys_user_role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1373311372</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>412110d5585003107f44ee5f67d2e377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9323f9c70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table>global.global.K26 FSO Email Agent</table>
+<target_name>global.global.K26 FSO Email Agent.admin</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>55111c95fa500310bf4128b387d0c748</update_guid>
+<update_guid_history>55111c95fa500310bf4128b387d0c748:1373311372</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_dd111c95585003107f44ee5f67d2e349</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-04-15 21:55:01</sys_created_on><sys_id>dd111c95585003107f44ee5f67d2e349</sys_id><sys_mod_count>0</sys_mod_count><sys_name>global.global.K26 FSO Email Agent.sn_bom.agent</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="global.global.K26 FSO Email Agent">81115895585003107f44ee5f67d2e373</sys_security_acl><sys_update_name>sys_security_acl_role_dd111c95585003107f44ee5f67d2e349</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-04-15 21:55:01</sys_updated_on><sys_user_role display_value="sn_bom.agent" name="sn_bom.agent">8a98c24f7354201056c1fc88caf6a759</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>456333178</payload_hash>
+<remote_update_set display_value="K26 Lab AI FSO Email Agent">cd219c95585003107f44ee5f67d2e32b</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-04-15 21:55:17</sys_created_on>
+<sys_id>452110d5585003107f44ee5f67d2e377</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>19d9323fa480000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-04-15 21:55:17</sys_updated_on>
+<table>global.global.K26 FSO Email Agent</table>
+<target_name>global.global.K26 FSO Email Agent.sn_bom.agent</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>91111c9551500310a22149d08e6ba54e</update_guid>
+<update_guid_history>91111c9551500310a22149d08e6ba54e:456333178</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
