@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-03-06 14:07:46">
+<kb_knowledge action="INSERT_OR_UPDATE">
+<active>true</active>
+<article_id>f0920b5724d376107f44f6826a1b7251</article_id>
+<article_type>text</article_type>
+<author display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</author>
+<base_version display_value="KB0010002 v1.0">f0920b5724d376107f44f6826a1b7251</base_version>
+<can_read_user_criteria/>
+<cannot_read_user_criteria/>
+<category/>
+<cmdb_ci display_value=""/>
+<description/>
+<direct>false</direct>
+<disable_commenting>false</disable_commenting>
+<disable_suggesting>false</disable_suggesting>
+<display_attachments>false</display_attachments>
+<display_number>KB0010002 v2.0</display_number>
+<editor_type>ECE</editor_type>
+<flagged>false</flagged>
+<generated_with_now_assist>false</generated_with_now_assist>
+<helpful_count>0</helpful_count>
+<image/>
+<instrumentation_metadata>{"firstLoadTimestamp":1772578534098,"isGenAiGenerated":false,"isGenAiMultiTaskCancelled":false,"taskList":[],"timeTakenToFirstSave":85401,"timeTakenToPublish":89078}</instrumentation_metadata>
+<kb_category display_value=""/>
+<kb_knowledge_base display_value="Customer Service">05ff44289f011200550bf7b6077fcfa3</kb_knowledge_base>
+<latest>true</latest>
+<latest_aqi display_value=""/>
+<meta/>
+<meta_description>Billing statements are usually available on the 1st of every month. If you did not receive a billing</meta_description>
+<number>KB0010002</number>
+<ownership_group display_value=""/>
+<published>2026-03-03</published>
+<rating/>
+<related_products/>
+<replacement_article display_value=""/>
+<retired/>
+<revised_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</revised_by>
+<roles/>
+<scheduled_publish_date/>
+<short_description>Billing statement</short_description>
+<source display_value=""/>
+<summary display_value="KB0010002">79e2839724d376107f44f6826a1b72af</summary>
+<sys_class_name>kb_knowledge</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2026-03-03 23:04:41</sys_created_on>
+<sys_domain>global</sys_domain>
+<sys_domain_path>/</sys_domain_path>
+<sys_id>26a48f5b24d376107f44f6826a1b7292</sys_id>
+<sys_mod_count>3</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2026-03-03 23:05:25</sys_updated_on>
+<sys_view_count>2</sys_view_count>
+<taxonomy_topic display_value=""/>
+<text><![CDATA[<style>div[data-gjs-type=wrapper] { block-size:100%; }
+
+#ixp1h { list-style-position:inside; }
+</style><div id="i0af"><div><ul class="ece-inline-style" style="list-style-position: inside;"><li><strong>Billing statements are usually available on the 1st of every month.</strong></li><li><strong>If you did not receive a billing statement, the most likely cause is that there was no activity.</strong></li><li><strong>If you notice an error in your billing statement, please work with your Client Relationship Manager.</strong></li></ul></div></div>]]></text>
+<topic>General</topic>
+<use_count>0</use_count>
+<valid_to>2100-01-01</valid_to>
+<version display_value="2.0">1dd407db24d376107f44f6826a1b72c8</version>
+<view_as_allowed>true</view_as_allowed>
+<wiki/>
+<workflow_state>published</workflow_state>
+</kb_knowledge>
+</unload>
